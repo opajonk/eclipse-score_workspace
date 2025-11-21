@@ -1,0 +1,7 @@
+.repo/
+
+/modules/
+/infrastructure/
+/score/
+/reference_integration/
+/eclipse-score-website/
