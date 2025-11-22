@@ -12,11 +12,14 @@ mkdir s-core
 cd s-core
 repo init --manifest-url=git@github.com:opajonk/eclipse-score_workspace.git
 repo sync
+```
+
+We use repo mostly to iterate over the repositories, not for actually baselining.
+
+```shell
 repo forall -c "git checkout main"
 repo forall -c "git pull"
 repo forall -c "git lfs pull"
 ```
-
-We use repo mostly to iterate over the repositories, not for actually baselining.
 
 If you do not have `repo` installed you can use the devcontainer of this repository, which has `repo` installed.
