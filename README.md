@@ -18,6 +18,10 @@ repo init --manifest-url=.
 repo sync
 ```
 
+> [!NOTE]
+> `--manifest-url=.` will use the last commit from the locally checkout branch of this repository.
+> It will not use any uncommitted changes.
+
 ## Setup without devcontainer
 
 With `repo` already installed run
