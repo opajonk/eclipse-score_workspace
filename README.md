@@ -14,7 +14,7 @@ git clone git@github.com:opajonk/eclipse-score_workspace.git s-core
 Inside the devcontainer run
 
 ```shell
-repo init --manifest-branch=setup-instructions --manifest-url=./.git
+repo init --manifest-url=.
 repo sync
 ```
 
