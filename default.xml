@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <default revision="main" remote="github" sync-j="8" />
     <remote name="github" fetch="https://github.com/elektrobit-contrib" />
-    <project name="eclipse-score_devcontainer" path="infrastructure/devcontainer" remote="github"
-        revision="main" />
-    <project name="eclipse-score_docs-as-code" path="infrastructure/docs-as-code" remote="github"
-        revision="main" />
-    <project name="eclipse-score_itf" path="infrastructure/itf" remote="github" revision="main" />
-    <project name="eclipse-score_toolchains_gcc" path="infrastructure/toolchains_gcc"
-        remote="github" revision="main" />
+    <project name="eclipse-score_devcontainer" path="infrastructure/devcontainer" />
+    <project name="eclipse-score_docs-as-code" path="infrastructure/docs-as-code" />
+    <project name="eclipse-score_itf" path="infrastructure/itf" />
+    <project name="eclipse-score_toolchains_gcc" path="infrastructure/toolchains_gcc" />
 
-    <project name="eclipse-score_score" path="score" remote="github" revision="main" />
-    <project name="eclipse-score_reference_integration" path="reference_integration" remote="github"
-        revision="main" />
-    <project name="eclipse-score_eclipse-score-website" path="eclipse-score-website" remote="github"
-        revision="main" />
+    <project name="eclipse-score_score" path="score" />
+    <project name="eclipse-score_reference_integration" path="reference_integration" />
+    <project name="eclipse-score_eclipse-score-website" path="eclipse-score-website" />
 
-    <project name="eclipse-score_inc_mw_per" path="modules/inc_mw_per" remote="github"
-        revision="main" />
-    <project name="eclipse-score_communication" path="modules/communication" remote="github"
-        revision="main" />
-    <project name="eclipse-score_inc_someip_gateway" path="modules/inc_someip_gateway"
-        remote="github" revision="main" />
-    <project name="eclipse-score_inc_feo" path="modules/inc_feo" remote="github" revision="main" />
-    <project name="eclipse-score_baselibs" path="modules/baselibs" remote="github" revision="main" />
+    <project name="eclipse-score_inc_mw_per" path="modules/inc_mw_per" />
+    <project name="eclipse-score_communication" path="modules/communication" />
+    <project name="eclipse-score_inc_someip_gateway" path="modules/inc_someip_gateway" />
+    <project name="eclipse-score_inc_feo" path="modules/inc_feo" />
+    <project name="eclipse-score_baselibs" path="modules/baselibs" />
 </manifest>
