@@ -11,7 +11,7 @@
     <project name="eclipse-score_reference_integration" path="reference_integration" />
     <project name="eclipse-score_eclipse-score-website" path="eclipse-score-website" />
 
-    <project name="eclipse-score_inc_mw_per" path="modules/inc_mw_per" />
+    <project name="eclipse-score_persistency" path="modules/persistency" />
     <project name="eclipse-score_communication" path="modules/communication" />
     <project name="eclipse-score_inc_someip_gateway" path="modules/inc_someip_gateway" />
     <project name="eclipse-score_inc_feo" path="modules/inc_feo" />
