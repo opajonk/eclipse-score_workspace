@@ -23,4 +23,5 @@
     <project name="eclipse-score_baselibs" path="modules/baselibs" />
     <project name="eclipse-score_inc_lifecycle" path="modules/inc_lifecycle" />
     <project name="eclipse-score_inc_daal" path="modules/inc_daal" />
+    <project name="eclipse-score_scrample" path="modules/scrample" />
 </manifest>
