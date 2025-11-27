@@ -1,12 +1,12 @@
 {
-"upstream":{
-  "cmd": "/workspaces/eclipse-score_workspace/.gita/scripts/add_upstream_remote.sh .",
-  "allow_all": true,
-  "help": "configure upstream remote for the current repository"
+  "setup_upstream": {
+    "cmd": "/workspaces/eclipse-score_workspace/.gita/scripts/add_upstream_remote.sh .",
+    "allow_all": true,
+    "help": "configure upstream remote for the current repository"
   },
-  "update_fork":{
-  "cmd": "/workspaces/eclipse-score_workspace/.gita/scripts/update_forked_main.sh .",
-  "allow_all": true,
-  "help": "update forked main branch with upstream main"
+  "update_fork": {
+    "cmd": "/workspaces/eclipse-score_workspace/.gita/scripts/update_forked_main.sh .",
+    "allow_all": true,
+    "help": "update forked main branch with upstream main"
   }
 }
