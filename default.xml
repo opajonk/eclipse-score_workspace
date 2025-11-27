@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <default revision="main" remote="github" sync-j="8" />
-    
-    <remote name="github" fetch="https://github.com/elektrobit-contrib" />
+    <default revision="main" remote="elektrobit" sync-j="8" />
+    <remote name="elektrobit" fetch="https://github.com/elektrobit-contrib/" />
+
     <!-- "top level" repositories -->
     <project name="eclipse-score_score" path="score" />
     <project name="eclipse-score_reference_integration" path="reference_integration" />
