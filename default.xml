@@ -13,6 +13,7 @@
     <project name="eclipse-score_docs-as-code" path="infrastructure/docs-as-code" />
     <project name="eclipse-score_itf" path="infrastructure/itf" />
     <project name="eclipse-score_toolchains_gcc" path="infrastructure/toolchains_gcc" />
+    <project name="eclipse-score_os_images" path="infrastructure/os_images" />
 
     <!-- modules -->
     <project name="eclipse-score_persistency" path="modules/persistency" />
