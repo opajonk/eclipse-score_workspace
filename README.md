@@ -1,58 +1,69 @@
 # Eclipse S-CORE Workspace
 
-This repository contains a workspace which contains all [forked Eclipse S-CORE repositories](https://github.com/elektrobit-contrib?q=eclipse-score) in a [Google Repo](https://gerrit.googlesource.com/git-repo) metadata file.
+This repository contains a workspace which contains all [forked Eclipse S-CORE repositories](https://github.com/elektrobit-contrib?q=eclipse-score) in a [gita](https://github.com/nosarthur/gita) metadata file.
 This helps a lot with checking out, and working with, the multi-repository structure of Eclipse S-CORE.
 
 ## Setup with devcontainer
 
-If you do not have `repo` installed you can use the devcontainer of this repository, which has `repo` installed.
+If you do not have `gita` installed you can use the devcontainer of this repository, which has `gita` installed.
 
 ```shell
 git clone git@github.com:opajonk/eclipse-score_workspace.git s-core
 ```
 
-Inside the devcontainer run
-
-```shell
-repo init --manifest-url=.
-repo sync
-```
-
-> [!NOTE]
-> `--manifest-url=.` will use the last commit from the locally checkout branch of this repository.
-> It will not use any uncommitted changes.
-
-## Setup without devcontainer
-
-With `repo` already installed run
-
-```shell
-mkdir s-core
-cd s-core
-repo init --manifest-url=git@github.com:opajonk/eclipse-score_workspace.git
-repo sync
-```
+The file `baseline.csv` contains all required meta-data.
+It can be used with the `gita clone` to create a complete checkout of S-CORE.
+In fact, the devcontainer in this repository already creates this: cf. `.devcontainer/install_gita.sh`.
+So, upon start of the devcontainer, gita already knows all repositories from `baseline.csv` and has them cloned!
 
 ## Iterating over repos
 
-We use repo mostly to iterate over the repositories, not for actually baselining.
+[Gita](https://github.com/nosarthur/gita) is a very out-of-the-box-useful, but also configurable tool.
 
-```shell
-repo forall -c "git checkout main"
-repo forall -c "git pull"
-repo forall -c "git lfs pull"
-```
+> NOTE: The devcontainer comes with auto-completion for gita.
 
-## Helpful scripts
+It has the capability to "act" (i.e. perform git, shell, or custom commands) on repositories that it knows about.
+This can be done individually, in groups, or over all repositories.
+Some groups are already defined in this workspace; run `gita group` to see them:
 
-### Add upstream as git remote
+````console
+$ gita group 
+modules: 
+  - baselibs
+  - baselibs_rust
+  - communication
+[...]
+  - scrample
+infrastructure: 
+  - bazel_platforms
+  - bazel_registry
+[...]
+  - tooling
+````
 
-```shell
-repo forall -c "/workspaces/eclipse-score_workspace/scripts/add_upstream_remote.sh ."
-```
+Now you can, for example, pull *all* repositories:
 
-### Update main branch of fork from upstream
+````console
+$ gita pull
+baselibs: Already up to date.
 
-```shell
-repo forall -c "/workspaces/eclipse-score_workspace/scripts/update_forked_main.sh ."
-```
+tooling: Already up to date.
+[...]
+devcontainer: Already up to date.
+````
+
+You can also just act on a group.
+For this, gita uses a "context".
+You tell gita what your current context is, and then it will act only upon those repositories which are part of it.
+
+````console
+$ gita context infrastructure
+$ gita ll
+bazel_platforms main       []      Merge pull request #4 from eclipse-score/nira_bug_fix_constraint_value (7 weeks ago)
+bazel_registry  main       []      Update modules (#179) (2 hours ago)
+devcontainer    main       []      Add more developer-tools (#57) (26 hours ago)
+[...]
+tooling         main       []      formatting: Add rustfmt (#86) (6 days ago)
+````
+
+Please consult the [gita documentation](https://github.com/nosarthur/gita), the online help / autocompletion for further information.

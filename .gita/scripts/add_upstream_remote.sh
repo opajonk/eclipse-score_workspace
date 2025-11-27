@@ -7,7 +7,7 @@ fi
 
 repo_dir="$1"
 cd "$repo_dir"
-url=$(git remote get-url elektrobit)
+url=$(git remote get-url origin)
 new_url="${url/elektrobit-contrib\/eclipse-score_/eclipse-score/}"
 git remote remove upstream 2>/dev/null || true
 git remote add upstream "$new_url"

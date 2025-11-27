@@ -12,4 +12,4 @@ git pull upstream main
 git checkout main
 git rebase upstream/main
 git checkout -
-git push elektrobit main
+git push origin main

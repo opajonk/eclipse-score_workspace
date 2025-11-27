@@ -1,5 +1,5 @@
 {
     "name": "eclipse-s-core",
     "image": "ghcr.io/eclipse-score/devcontainer:1.0.0",
-    "postCreateCommand": "bash .devcontainer/install_repo.sh"
+    "postCreateCommand": "bash .devcontainer/install_gita.sh"
 }
