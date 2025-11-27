@@ -19,10 +19,10 @@
     <!-- modules -->
     <project name="eclipse-score_persistency" path="modules/persistency" />
     <project name="eclipse-score_communication" path="modules/communication" />
-    <project name="eclipse-score_inc_someip_gateway" path="modules/inc_someip_gateway" />
-    <project name="eclipse-score_inc_feo" path="modules/inc_feo" />
+    <project name="eclipse-score_feo" path="modules/feo" />
     <project name="eclipse-score_baselibs" path="modules/baselibs" />
+    <project name="eclipse-score_scrample" path="modules/scrample" />
+    <project name="eclipse-score_inc_someip_gateway" path="modules/inc_someip_gateway" />
     <project name="eclipse-score_inc_lifecycle" path="modules/inc_lifecycle" />
     <project name="eclipse-score_inc_daal" path="modules/inc_daal" />
-    <project name="eclipse-score_scrample" path="modules/scrample" />
 </manifest>
