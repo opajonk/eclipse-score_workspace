@@ -42,3 +42,17 @@ repo forall -c "git checkout main"
 repo forall -c "git pull"
 repo forall -c "git lfs pull"
 ```
+
+## Helpful scripts
+
+### Add upstream as git remote
+
+```shell
+repo forall -c "/workspaces/eclipse-score_workspace/scripts/add_upstream_remote.sh ."
+```
+
+### Update main branch of fork from upstream
+
+```shell
+repo forall -c "/workspaces/eclipse-score_workspace/scripts/update_forked_main.sh ."
+```
