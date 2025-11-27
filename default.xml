@@ -7,6 +7,7 @@
     <project name="eclipse-score_score" path="score" />
     <project name="eclipse-score_reference_integration" path="reference_integration" />
     <project name="eclipse-score_eclipse-score-website" path="eclipse-score-website" />
+    <project name="eclipse-score_process_description" path="process_description" />
 
     <!-- infrastructure repositories -->
     <project name="eclipse-score_devcontainer" path="infrastructure/devcontainer" />
