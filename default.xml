@@ -21,6 +21,7 @@
     <project name="eclipse-score_communication" path="modules/communication" />
     <project name="eclipse-score_feo" path="modules/feo" />
     <project name="eclipse-score_baselibs" path="modules/baselibs" />
+    <project name="eclipse-score_baselibs_rust" path="modules/baselibs_rust" />
     <project name="eclipse-score_scrample" path="modules/scrample" />
     <project name="eclipse-score_inc_someip_gateway" path="modules/inc_someip_gateway" />
     <project name="eclipse-score_inc_lifecycle" path="modules/inc_lifecycle" />
