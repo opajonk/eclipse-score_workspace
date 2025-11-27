@@ -14,8 +14,12 @@
     <project name="eclipse-score_docs-as-code" path="infrastructure/docs-as-code" />
     <project name="eclipse-score_itf" path="infrastructure/itf" />
     <project name="eclipse-score_toolchains_gcc" path="infrastructure/toolchains_gcc" />
+    <project name="eclipse-score_toolchains_qnx" path="infrastructure/toolchains_qnx" />
     <project name="eclipse-score_os_images" path="infrastructure/os_images" />
     <project name="eclipse-score_bazel_registry" path="infrastructure/bazel_registry" />
+    <project name="eclipse-score_bazel_platforms" path="infrastructure/bazel_platforms" />
+    <project name="eclipse-score_tooling" path="infrastructure/tooling" />
+    <project name="eclipse-score_testing_tools" path="infrastructure/testing_tools" />
 
     <!-- modules -->
     <project name="eclipse-score_persistency" path="modules/persistency" />
@@ -24,6 +28,8 @@
     <project name="eclipse-score_baselibs" path="modules/baselibs" />
     <project name="eclipse-score_baselibs_rust" path="modules/baselibs_rust" />
     <project name="eclipse-score_scrample" path="modules/scrample" />
+    <project name="eclipse-score_orchestrator" path="modules/orchestrator" />
+    <project name="eclipse-score_logging" path="modules/logging" />
     <project name="eclipse-score_inc_someip_gateway" path="modules/inc_someip_gateway" />
     <project name="eclipse-score_inc_lifecycle" path="modules/inc_lifecycle" />
     <project name="eclipse-score_inc_daal" path="modules/inc_daal" />
