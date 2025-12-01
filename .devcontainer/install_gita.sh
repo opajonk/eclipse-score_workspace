@@ -12,10 +12,10 @@ pipx install gita
 echo "eval \"\$(register-python-argcomplete gita -s bash)\"" >> ~/.bashrc
 
 # Set GITA_PROJECT_HOME environment variable
-echo "export GITA_PROJECT_HOME=/workspaces/eclipse-score_workspace/.gita" >> ~/.bashrc
-GITA_PROJECT_HOME=/workspaces/eclipse-score_workspace/.gita
+echo "export GITA_PROJECT_HOME=$(pwd)/.gita" >> ~/.bashrc
+GITA_PROJECT_HOME=$(pwd)/.gita
 mkdir -p "$GITA_PROJECT_HOME"
 export GITA_PROJECT_HOME
 
 # Automagically clone repositories listed in baseline.csv
-gita clone --preserve-path --from-file /workspaces/eclipse-score_workspace/baseline.csv
+gita clone --preserve-path --from-file $(pwd)/baseline.csv
